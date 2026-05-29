@@ -9,8 +9,8 @@ export default function Hero() {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent-500/8 rounded-full blur-3xl" />
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-0 relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-20 relative z-10 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
           {/* LEFT: Content */}
           <div className="space-y-8">
