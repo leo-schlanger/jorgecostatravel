@@ -2,26 +2,177 @@
 <html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Passagens aéreas com tarifas exclusivas. Jorge Pessoa e Costa, consultor certificado APM Viagens." />
-    <meta name="theme-color" content="#0f172a" />
-    <meta property="og:title" content="JPC Travel | Passagens Aéreas ao Melhor Preço" />
-    <meta property="og:description" content="Voos nacionais e internacionais com tarifas exclusivas. Consultor certificado RNAVT." />
+
+    <!-- Primary SEO -->
+    <title>Jorge Pessoa e Costa Travel — Passagens Aéreas ao Melhor Preço</title>
+    <meta name="description" content="Passagens aéreas com tarifas exclusivas até 23% mais baratas. Voos nacionais e internacionais. Jorge Pessoa e Costa, consultor de viagens certificado RNAVT 12286 pela APM Viagens. Cascais, Portugal." />
+    <meta name="keywords" content="passagens aéreas, voos baratos, bilhetes avião, consultor viagens, tarifas exclusivas, voos internacionais, Jorge Pessoa Costa, JPC Travel, APM Viagens, Cascais, Portugal, RNAVT" />
+    <meta name="author" content="Jorge Pessoa e Costa" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://jorgecostatravel.vercel.app/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+    <link rel="apple-touch-icon" href="/logo.jpg" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="msapplication-TileColor" content="#0f766e" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jorgecostatravel.vercel.app/" />
+    <meta property="og:title" content="JPC Travel — Passagens Aéreas ao Melhor Preço" />
+    <meta property="og:description" content="Voos nacionais e internacionais com tarifas exclusivas até 23% mais baratas. Consultor certificado RNAVT. Cotação grátis em 24h." />
+    <meta property="og:image" content="https://jorgecostatravel.vercel.app/og-image.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="Jorge Pessoa e Costa Travel - Logo JPC" />
     <meta property="og:locale" content="pt_PT" />
+    <meta property="og:site_name" content="Jorge Pessoa e Costa Travel" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="JPC Travel — Passagens Aéreas ao Melhor Preço" />
+    <meta name="twitter:description" content="Voos nacionais e internacionais com tarifas exclusivas. Consultor certificado RNAVT. Cotação grátis em 24h." />
+    <meta name="twitter:image" content="https://jorgecostatravel.vercel.app/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Jorge Pessoa e Costa Travel - Logo JPC" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
-    <title>Jorge Pessoa e Costa Travel — Passagens Aéreas ao Melhor Preço</title>
+
+    <!-- Structured Data: TravelAgency -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TravelAgency",
       "name": "Jorge Pessoa e Costa Travel",
+      "alternateName": "JPC Travel",
+      "description": "Passagens aéreas com tarifas exclusivas. Consultor de viagens certificado RNAVT 12286 pela APM Viagens.",
+      "url": "https://jorgecostatravel.vercel.app",
       "telephone": "+351931362788",
-      "address": { "@type": "PostalAddress", "addressLocality": "Cascais", "addressCountry": "PT" },
-      "sameAs": ["https://www.instagram.com/jorgepessoacostatravel/"]
+      "image": "https://jorgecostatravel.vercel.app/og-image.jpg",
+      "logo": "https://jorgecostatravel.vercel.app/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cascais",
+        "addressRegion": "Lisboa",
+        "addressCountry": "PT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "38.6979",
+        "longitude": "-9.4215"
+      },
+      "sameAs": [
+        "https://www.instagram.com/jorgepessoacostatravel/"
+      ],
+      "priceRange": "€€",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "150"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Passagens Aéreas",
+            "description": "Voos nacionais e internacionais com tarifas exclusivas negociadas"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cotação de Voos",
+            "description": "Comparação e cotação gratuita de voos em menos de 24 horas"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jorge Pessoa e Costa",
+      "jobTitle": "Consultor de Viagens",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "APM Viagens",
+        "url": "https://mundoapm.pt"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cascais",
+        "addressCountry": "PT"
+      },
+      "sameAs": [
+        "https://www.instagram.com/jorgepessoacostatravel/"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Porquê comprar passagens aéreas através de um consultor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tenho acesso a tarifas negociadas que não estão disponíveis nos motores de busca. Além do preço, ofereço apoio personalizado na escolha do voo, condições de cancelamento mais flexíveis e assistência caso surja qualquer problema. O serviço de pesquisa e cotação é gratuito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os preços são mesmo mais baratos do que online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, na grande maioria dos casos. Trabalho com tarifas consolidadas e negociadas através da rede APM Viagens. Em média, os nossos clientes poupam até 23% no valor total da passagem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demora a receber a cotação?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No máximo 24 horas. Na maioria dos casos, respondo no mesmo dia. Basta enviar o destino, datas e número de passageiros via WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se precisar de alterar ou cancelar o voo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trato de tudo por si. Ao comprar comigo, as condições de alteração e cancelamento são frequentemente mais flexíveis. Em caso de imprevisto, contacte-me por WhatsApp e resolvo o mais rápido possível."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são as formas de pagamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aceito transferência bancária, MB Way e cartão de crédito. Em alguns casos, é possível pagar em prestações."
+          }
+        }
+      ]
     }
     </script>
   </head>
