@@ -16,16 +16,27 @@ export default function App() {
   return (
     <div className="bg-slate-50 text-slate-900 antialiased">
       <Navbar />
+      {/* dark */}
       <Hero />
+      {/* white bar */}
       <TrustBar />
+      {/* white */}
       <About />
+      {/* slate-50 */}
       <Advantages />
+      {/* white */}
       <Destinations />
+      {/* white with borders */}
       <HowItWorks />
+      {/* dark */}
       <Testimonials />
+      {/* slate-50 */}
       <FAQ />
+      {/* dark */}
       <CTASection />
+      {/* white */}
       <Contact />
+      {/* dark */}
       <Footer />
       <WhatsAppFloat />
     </div>

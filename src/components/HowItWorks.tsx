@@ -9,7 +9,7 @@ const steps = [
 export default function HowItWorks() {
   const headerRef = useReveal()
   return (
-    <section className="py-20 lg:py-28 bg-slate-50">
+    <section className="py-24 lg:py-32 bg-white border-t border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={headerRef} className="reveal-el text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-700 text-xs font-semibold rounded-full mb-4">3 Passos Simples</div>

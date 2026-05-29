@@ -19,7 +19,7 @@ const testimonials = [
 export default function Testimonials() {
   const headerRef = useReveal()
   return (
-    <section id="testemunhos" className="py-20 lg:py-28 bg-brand-950">
+    <section id="testemunhos" className="py-24 lg:py-32 bg-brand-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={headerRef} className="reveal-el text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 text-brand-300 text-xs font-semibold rounded-full mb-4">Testemunhos</div>

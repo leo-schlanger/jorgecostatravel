@@ -7,7 +7,7 @@ export default function Contact() {
   const formRef = useReveal()
 
   return (
-    <section id="contacto" className="py-20 lg:py-28 bg-slate-50">
+    <section id="contacto" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div ref={infoRef} className="reveal-el space-y-8">

@@ -16,7 +16,7 @@ const destinations = [
 export default function Destinations() {
   const ref = useReveal()
   return (
-    <section id="destinos" className="py-20 lg:py-28 bg-white">
+    <section id="destinos" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className="reveal-el text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-700 text-xs font-semibold rounded-full mb-4">Destinos Populares</div>
@@ -24,7 +24,7 @@ export default function Destinations() {
           <p className="text-slate-500 text-lg">Voos directos e com escala para os destinos mais procurados. Clique para pedir cotação.</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
           {destinations.map((d) => (
             <DestCard key={d.name} {...d} />
           ))}

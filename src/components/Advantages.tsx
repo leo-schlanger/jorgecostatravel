@@ -4,7 +4,7 @@ import { useReveal } from "../lib/hooks"
 export default function Advantages() {
   const ref = useReveal()
   return (
-    <section id="vantagens" className="py-20 lg:py-28 bg-slate-50">
+    <section id="vantagens" className="py-24 lg:py-32 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className="reveal-el text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-700 text-xs font-semibold rounded-full mb-4">Porquê Escolher-me</div>
