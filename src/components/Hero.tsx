@@ -3,99 +3,99 @@ import { WHATSAPP_MSG } from "../lib/utils"
 
 export default function Hero() {
   return (
-    <section className="hero-mesh min-h-screen flex items-center relative overflow-hidden">
-      {/* Decorative blurs */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-brand-500/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent-500/8 rounded-full blur-3xl" />
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
+    <section className="hero-bg min-h-screen flex items-center relative overflow-hidden">
+      {/* Subtle light overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-20 relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-24 relative z-10 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
           {/* LEFT: Content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass badge-shimmer">
-              <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-xs font-medium text-white/80">Parceiro Oficial APM Viagens — RNAVT 12286</span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20">
+              <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-xs font-medium text-white/90">Parceiro Oficial APM Viagens — RNAVT 12286</span>
             </div>
 
             <div className="space-y-5">
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold text-white leading-[1.08] tracking-tight">
-                Passagens aéreas com
-                <span className="bg-gradient-to-r from-brand-400 to-accent-400 bg-clip-text text-transparent"> tarifas exclusivas</span>
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold text-white leading-[1.08] tracking-tight drop-shadow-lg">
+                Passagens aéreas com{" "}
+                <span className="text-teal-300">tarifas exclusivas</span>
               </h1>
-              <p className="text-lg text-slate-300 max-w-lg leading-relaxed">
+              <p className="text-lg text-white/80 max-w-lg leading-relaxed drop-shadow-sm">
                 Voos nacionais e internacionais ao melhor preço. Eu encontro, comparo e emito o seu bilhete — com apoio do início ao fim.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href={WHATSAPP_MSG("Olá Jorge! Gostaria de uma cotação de voo.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-all shadow-lg shadow-teal-600/25 hover:shadow-teal-600/40 hover:-translate-y-0.5">
+              <a href={WHATSAPP_MSG("Olá Jorge! Gostaria de uma cotação de voo.")} target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-teal-500 hover:bg-teal-400 text-white font-semibold rounded-xl transition-all shadow-lg shadow-teal-500/30 hover:shadow-teal-400/40 hover:-translate-y-0.5 text-[15px]">
                 <WhatsAppIcon />
                 Pedir Cotação Grátis
               </a>
-              <a href="#destinos" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-white/90 font-semibold rounded-xl border border-white/20 hover:bg-white/10 transition-all">
+              <a href="#destinos"
+                 className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/15 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/25 hover:bg-white/25 transition-all text-[15px]">
                 Ver Destinos <ArrowRight className="w-4 h-4" />
               </a>
             </div>
 
             <div className="flex flex-wrap gap-6 pt-2">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2.5">
                 <div className="flex -space-x-2">
                   {["JS", "AM", "TC"].map((i, idx) => (
-                    <div key={i} className={`w-8 h-8 rounded-full border-2 border-brand-950 flex items-center justify-center text-[10px] font-bold text-white ${idx === 0 ? "bg-brand-500" : idx === 1 ? "bg-accent-500" : "bg-emerald-500"}`}>{i}</div>
+                    <div key={i} className={`w-8 h-8 rounded-full border-2 border-teal-900/50 flex items-center justify-center text-[10px] font-bold text-white ${idx === 0 ? "bg-teal-500" : idx === 1 ? "bg-amber-500" : "bg-emerald-500"}`}>{i}</div>
                   ))}
                 </div>
-                <span className="text-sm text-slate-400"><strong className="text-white">150+</strong> clientes satisfeitos</span>
+                <span className="text-sm text-white/70"><strong className="text-white">150+</strong> clientes satisfeitos</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />)}
                 </div>
-                <span className="text-sm text-slate-400">5.0</span>
+                <span className="text-sm text-white/70">5.0</span>
               </div>
             </div>
           </div>
 
           {/* RIGHT: Flight Card + Trust Pills */}
-          <div className="hidden lg:flex flex-col gap-5">
+          <div className="hidden lg:flex flex-col gap-4">
             {/* Flight search card */}
-            <div className="glass rounded-2xl p-6 space-y-4">
+            <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 space-y-4 border border-white/15 shadow-2xl">
               <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold text-white/90">Pesquisa Rápida de Voos</span>
-                <Plane className="w-5 h-5 text-teal-400" />
+                <span className="text-sm font-semibold text-white">Pesquisa Rápida de Voos</span>
+                <Plane className="w-5 h-5 text-teal-300" />
               </div>
 
               <div className="space-y-3">
-                <div className="bg-white/10 rounded-lg p-3">
+                <div className="bg-white/10 rounded-lg p-3.5">
                   <div className="text-[10px] uppercase tracking-wider text-white/50 mb-1">Origem</div>
                   <div className="flex items-center justify-between">
                     <span className="text-white font-semibold">Lisboa (LIS)</span>
-                    <span className="text-white/40 text-xs">Portugal</span>
+                    <span className="text-white/50 text-xs">Portugal</span>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-full bg-teal-600 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-teal-500 flex items-center justify-center shadow-md">
                     <ArrowUpRight className="w-4 h-4 text-white" />
                   </div>
                 </div>
 
-                <div className="bg-white/10 rounded-lg p-3">
+                <div className="bg-white/10 rounded-lg p-3.5">
                   <div className="text-[10px] uppercase tracking-wider text-white/50 mb-1">Destino</div>
                   <div className="flex items-center justify-between">
                     <span className="text-white font-semibold">Cancún (CUN)</span>
-                    <span className="text-white/40 text-xs">México</span>
+                    <span className="text-white/50 text-xs">México</span>
                   </div>
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                <div className="bg-white/10 rounded-lg p-3">
+                <div className="bg-white/10 rounded-lg p-3.5">
                   <div className="text-[10px] uppercase tracking-wider text-white/50 mb-1">Ida</div>
                   <span className="text-sm text-white font-medium">15 Jul 2025</span>
                 </div>
-                <div className="bg-white/10 rounded-lg p-3">
+                <div className="bg-white/10 rounded-lg p-3.5">
                   <div className="text-[10px] uppercase tracking-wider text-white/50 mb-1">Volta</div>
                   <span className="text-sm text-white font-medium">29 Jul 2025</span>
                 </div>
@@ -106,33 +106,34 @@ export default function Hero() {
                   <div className="text-[10px] uppercase tracking-wider text-white/50">A partir de</div>
                   <div className="text-2xl font-bold text-white">€489<span className="text-sm font-normal text-white/50">/pessoa</span></div>
                 </div>
-                <a href={WHATSAPP_MSG("Olá Jorge! Vi o voo Lisboa-Cancún e gostaria de mais informações.")} target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold rounded-lg transition-colors">
+                <a href={WHATSAPP_MSG("Olá Jorge! Vi o voo Lisboa-Cancún e gostaria de mais informações.")} target="_blank" rel="noopener noreferrer"
+                   className="px-5 py-2.5 bg-teal-500 hover:bg-teal-400 text-white text-sm font-semibold rounded-lg transition-colors shadow-md">
                   Reservar
                 </a>
               </div>
             </div>
 
-            {/* Trust pills below card — clean, no overlaps */}
+            {/* Trust pills */}
             <div className="grid grid-cols-3 gap-3">
-              <div className="glass rounded-xl px-4 py-3 flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center gap-3 border border-white/10">
+                <CheckCircle className="w-5 h-5 text-emerald-300 flex-shrink-0" />
                 <div>
                   <div className="text-[11px] text-white/50">Poupança</div>
-                  <div className="text-sm font-bold text-emerald-400">-23%</div>
+                  <div className="text-sm font-bold text-emerald-300">-23%</div>
                 </div>
               </div>
-              <div className="glass rounded-xl px-4 py-3 flex items-center gap-3">
-                <Shield className="w-5 h-5 text-amber-400 flex-shrink-0" />
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center gap-3 border border-white/10">
+                <Shield className="w-5 h-5 text-amber-300 flex-shrink-0" />
                 <div>
                   <div className="text-[11px] text-white/50">Certificado</div>
-                  <div className="text-sm font-bold text-white/90">RNAVT</div>
+                  <div className="text-sm font-bold text-white">RNAVT</div>
                 </div>
               </div>
-              <div className="glass rounded-xl px-4 py-3 flex items-center gap-3">
-                <TrendingUp className="w-5 h-5 text-teal-400 flex-shrink-0" />
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center gap-3 border border-white/10">
+                <TrendingUp className="w-5 h-5 text-teal-300 flex-shrink-0" />
                 <div>
                   <div className="text-[11px] text-white/50">Emitidos</div>
-                  <div className="text-sm font-bold text-white/90">200+</div>
+                  <div className="text-sm font-bold text-white">200+</div>
                 </div>
               </div>
             </div>
