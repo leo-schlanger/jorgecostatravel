@@ -42,7 +42,7 @@ export default function About() {
               Especializo-me em <strong className="text-slate-900">encontrar as melhores passagens aéreas</strong> para qualquer destino do mundo, com tarifas que não encontra nas plataformas online.
             </p>
             <p className="text-slate-600 leading-relaxed text-[15px]">
-              Como CEO da <strong className="text-slate-900">Marca Férias</strong>, pela APM Viagens, tenho acesso direto a tarifas negociadas com as principais companhias aéreas. Isso significa preços mais baixos, melhores condições de cancelamento e apoio personalizado na emissão do seu bilhete.
+              Como fundador da <strong className="text-slate-900">JPC Travel</strong>, pela APM Viagens, tenho acesso direto a tarifas negociadas com as principais companhias aéreas. Isso significa preços mais baixos, melhores condições de cancelamento e apoio personalizado na emissão do seu bilhete.
             </p>
             <p className="text-slate-600 leading-relaxed text-[15px]">
               Seja um voo de ida e volta para férias, uma viagem de negócios ou uma escapadinha de última hora — eu encontro a melhor opção para si.

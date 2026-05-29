@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Plane, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { useScrollNav } from "../lib/hooks"
 
 export default function Navbar() {
@@ -7,18 +7,15 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   const linkClass = scrolled || open ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"
-  const brandClass = scrolled || open ? "text-brand-950" : "text-white"
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || open ? "nav-glass" : ""}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-[72px]">
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center">
-              <Plane className="w-4 h-4 text-white" />
-            </div>
-            <span className={`font-display font-bold text-lg transition-colors ${brandClass}`}>
-              Marca <span className="text-brand-600">Férias</span>
+          <a href="#" className="flex items-center gap-2.5">
+            <img src="/logo.jpg" alt="JPC Travel" className="h-10 w-10 rounded-lg object-cover" />
+            <span className={`font-display font-bold text-base transition-colors ${scrolled || open ? "text-brand-950" : "text-white"}`}>
+              JPC <span className="text-teal-500">Travel</span>
             </span>
           </a>
 
@@ -33,7 +30,7 @@ export default function Navbar() {
                 {label}
               </a>
             ))}
-            <a href="#contacto" className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-brand-600 text-white text-sm font-semibold rounded-lg hover:bg-brand-700 transition-colors shadow-sm">
+            <a href="#contacto" className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-teal-600 text-white text-sm font-semibold rounded-lg hover:bg-teal-700 transition-colors shadow-sm">
               Pedir Cotação
             </a>
           </div>
@@ -52,7 +49,7 @@ export default function Navbar() {
                 {label}
               </a>
             ))}
-            <a href="#contacto" onClick={() => setOpen(false)} className="block mt-2 text-center px-4 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-lg">
+            <a href="#contacto" onClick={() => setOpen(false)} className="block mt-2 text-center px-4 py-2.5 bg-teal-600 text-white text-sm font-semibold rounded-lg">
               Pedir Cotação
             </a>
           </div>

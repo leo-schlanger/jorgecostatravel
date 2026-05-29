@@ -34,7 +34,7 @@ export default function Contact() {
               <h3 className="font-display text-xl font-bold text-slate-900 mb-6">Pedir cotação de voo</h3>
               <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" className="space-y-4">
                 {/* SUBSTITUIR: Trocar YOUR_EMAIL_HERE pelo email real */}
-                <input type="hidden" name="_subject" value="Nova cotação — Site Marca Férias" />
+                <input type="hidden" name="_subject" value="Nova cotação — JPC Travel" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 <input type="text" name="_honey" style={{ display: "none" }} />
@@ -60,7 +60,7 @@ export default function Contact() {
                   <label htmlFor="notes" className="block text-sm font-medium text-slate-700 mb-1.5">Notas</label>
                   <textarea id="notes" name="notas" rows={3} placeholder="Preferência de horário, companhia aérea, classe..." className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all resize-none" />
                 </div>
-                <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-lg transition-all shadow-sm hover:shadow-md">
+                <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg transition-all shadow-sm hover:shadow-md">
                   <Send className="w-4 h-4" /> Pedir Cotação
                 </button>
               </form>

@@ -1,4 +1,4 @@
-import { Plane, ArrowRight, Star, ArrowUpRight, CheckCircle, Shield, TrendingUp } from "lucide-react"
+import { ArrowRight, Star, ArrowUpRight, CheckCircle, Shield, TrendingUp, Plane } from "lucide-react"
 import { WHATSAPP_MSG } from "../lib/utils"
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href={WHATSAPP_MSG("Olá Jorge! Gostaria de uma cotação de voo.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl transition-all shadow-lg shadow-brand-600/25 hover:shadow-brand-600/40 hover:-translate-y-0.5">
+              <a href={WHATSAPP_MSG("Olá Jorge! Gostaria de uma cotação de voo.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-all shadow-lg shadow-teal-600/25 hover:shadow-teal-600/40 hover:-translate-y-0.5">
                 <WhatsAppIcon />
                 Pedir Cotação Grátis
               </a>
@@ -63,7 +63,7 @@ export default function Hero() {
             <div className="glass rounded-2xl p-6 space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-semibold text-white/90">Pesquisa Rápida de Voos</span>
-                <Plane className="w-5 h-5 text-brand-400" />
+                <Plane className="w-5 h-5 text-teal-400" />
               </div>
 
               <div className="space-y-3">
@@ -76,7 +76,7 @@ export default function Hero() {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-full bg-brand-600 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-teal-600 flex items-center justify-center">
                     <ArrowUpRight className="w-4 h-4 text-white" />
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export default function Hero() {
                   <div className="text-[10px] uppercase tracking-wider text-white/50">A partir de</div>
                   <div className="text-2xl font-bold text-white">€489<span className="text-sm font-normal text-white/50">/pessoa</span></div>
                 </div>
-                <a href={WHATSAPP_MSG("Olá Jorge! Vi o voo Lisboa-Cancún e gostaria de mais informações.")} target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold rounded-lg transition-colors">
+                <a href={WHATSAPP_MSG("Olá Jorge! Vi o voo Lisboa-Cancún e gostaria de mais informações.")} target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold rounded-lg transition-colors">
                   Reservar
                 </a>
               </div>
@@ -129,7 +129,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="glass rounded-xl px-4 py-3 flex items-center gap-3">
-                <TrendingUp className="w-5 h-5 text-brand-400 flex-shrink-0" />
+                <TrendingUp className="w-5 h-5 text-teal-400 flex-shrink-0" />
                 <div>
                   <div className="text-[11px] text-white/50">Emitidos</div>
                   <div className="text-sm font-bold text-white/90">200+</div>

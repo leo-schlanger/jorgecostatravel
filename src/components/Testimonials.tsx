@@ -4,7 +4,7 @@ import { useReveal } from "../lib/hooks"
 const testimonials = [
   {
     text: "Pedi cotação para 4 voos Lisboa-Maldivas e o Jorge encontrou uma tarifa 200€ mais barata por pessoa do que a melhor que eu tinha encontrado online. Recomendo a 100%!",
-    name: "Maria & Tiago Silva", trip: "Lisboa → Maldivas", initials: "MS", color: "bg-brand-600",
+    name: "Maria & Tiago Silva", trip: "Lisboa → Maldivas", initials: "MS", color: "bg-teal-600",
   },
   {
     text: "Precisava de alterar o meu voo de última hora e o Jorge resolveu tudo em minutos. Se fosse pela companhia aérea, tinha perdido o bilhete. O apoio pessoal faz toda a diferença.",

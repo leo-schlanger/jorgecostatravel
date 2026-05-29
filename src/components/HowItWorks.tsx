@@ -32,7 +32,7 @@ function Step({ n, title, desc }: { n: string; title: string; desc: string }) {
   const ref = useReveal()
   return (
     <div ref={ref} className="reveal-el text-center">
-      <div className="w-14 h-14 mx-auto mb-6 rounded-2xl bg-brand-600 text-white flex items-center justify-center font-display font-bold text-xl relative z-10 shadow-lg shadow-brand-600/20">{n}</div>
+      <div className="w-14 h-14 mx-auto mb-6 rounded-2xl bg-teal-600 text-white flex items-center justify-center font-display font-bold text-xl relative z-10 shadow-lg shadow-teal-600/20">{n}</div>
       <h3 className="text-lg font-bold text-slate-900 mb-2">{title}</h3>
       <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">{desc}</p>
     </div>
